@@ -1,6 +1,6 @@
 # Command Line Interface
 
-`ccwc` is a small, single-file C++ utility that mimics basic behavior of the Unix `wc` command (word count). It can count lines, words, bytes, and characters in a file or from standard input.
+`ccwc` is a simple Python utility that mimics basic behavior of the Unix `wc` command (word count). It can count lines, words, bytes, and characters in a file or from standard input.
 
 ## ✅ Features
 
@@ -10,36 +10,45 @@
 - Count **characters** (`-m`)
 - Default behavior (no option) prints: `lines words bytes <filename>`
 
-## 🛠️ Build
+## 🛠️ Setup
 
-From the project folder, compile with `g++`:
+No compilation needed! Just ensure you have Python 3.6+ installed.
 
-```sh
-g++ ccwc.cpp -o ccwc
+### Run directly
+
+```bash
+python ccwc.py <file>
+```
+
+Or make it executable:
+
+```bash
+chmod +x ccwc.py
+./ccwc.py <file>
 ```
 
 ## ▶️ Usage
 
 ### Count lines, words, bytes, or chars for a file
 
-```sh
-./ccwc <file>
-./ccwc -l <file>
-./ccwc -w <file>
-./ccwc -c <file>
-./ccwc -m <file>
+```bash
+python ccwc.py <file>
+python ccwc.py -l <file>
+python ccwc.py -w <file>
+python ccwc.py -c <file>
+python ccwc.py -m <file>
 ```
 
 Example:
 
-```sh
-./ccwc -l test.txt
+```bash
+python ccwc.py -l test.txt
 ```
 
 ### Read from stdin (pipe)
 
-```sh
-cat test.txt | ./ccwc -l
+```bash
+cat test.txt | python ccwc.py -l
 ```
 
 > Note: stdin mode only supports `-l`, `-w`, or `-c`.
