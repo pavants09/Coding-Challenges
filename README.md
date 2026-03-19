@@ -8,9 +8,6 @@ A personal repository for solving coding problems, learning new algorithms, and 
 - **Working examples**: Complete, runnable solutions with input/output examples (where applicable).
 - **Learning notes**: Problem insights, tradeoffs, and improvements tracked alongside solutions.
 
-## 🗂️ Repository structure
-
-- `Building WC/` — A folder containing a C++ implementation and related notes for the "Building Water Container" challenge.
 
 > Tip: Add a short README inside each challenge folder to describe the problem, approach, and how to run the code.
 
